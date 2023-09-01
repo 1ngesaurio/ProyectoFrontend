@@ -16,7 +16,7 @@ body{
     align-items: center;
     min-height: 90vh;
     background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(125,125,223,1) 0%, rgba(86,202,226,1) 46%);
+    background: transparent;/*linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(125,125,223,1) 0%, rgba(86,202,226,1) 46%);*/
     width: 470px;   
     margin: 0 auto;
 }
@@ -25,13 +25,6 @@ body{
     display: flex;
     flex-direction: column;
     padding: 0 15px 0 15px;
-}
-span{
-    color: #fff;
-    font-size: small;
-    display: flex;
-    justify-content: center;
-    padding: 10px 0 10px 0;
 }
 header{
     color: #fff;

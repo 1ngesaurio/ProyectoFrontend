@@ -13,7 +13,7 @@
 }
 
 body{
-    background: white;
+    background: rgb(2,0,36);
     font-family: 'Poppins',sans-serif;
 }
 .nav{
@@ -89,10 +89,9 @@ body{
 .botonDespliegue {
     width: 50px;
     text-align: left;
-    position: absolute;
-    top: 0;
+    position: relative;
+  
     right: 0;
-    padding: 10px; /* Agrega espacio alrededor del icono */
 }
 
 
@@ -359,4 +358,10 @@ h1{
     transform: translate(-50%, -50%);
     color: white;
     font-size: 600%;
+}
+/*Para convertir la aplicación en responsive*/
+@media screen and(max-width:500px){
+    form{
+        width: 80%;
+}
 }
