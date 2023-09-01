@@ -5,6 +5,7 @@ document.getElementById("login").addEventListener("submit", function(event) {
     var contraseña = document.getElementById("contraseña");
     var mensaje = '';
     var resultado = true;
+    /*Expresión regular para validar que la contraseña contenga al menos 1-letra 1-numero 1-caracter especial */
     const regexPassword = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/;
 
     if (usuario.value.length < 3) {

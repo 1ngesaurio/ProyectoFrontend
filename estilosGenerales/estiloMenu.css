@@ -88,10 +88,9 @@ body{
 .botonDespliegue {
     width: 50px;
     text-align: left;
-    position: absolute;
-    top: 0;
+    position: relative;
+  
     right: 0;
-    padding: 10px;
 }
 
 
@@ -115,4 +114,10 @@ hr{
 /*Ocupa el espacio disponible de la pantalla*/
 .contenedorOpciones {
     flex: 1; 
+}
+/*Para convertir la aplicación en responsive*/
+@media screen and(max-width:500px){
+    form{
+        width: 80%;
+}
 }
