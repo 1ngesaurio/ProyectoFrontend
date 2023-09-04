@@ -69,3 +69,10 @@ h2{
     font-weight: bold;
     margin: 10px;
 }
+
+/*Para convertir la aplicación en responsive*/
+@media screen and(max-width:500px){
+    form{
+        width: 80%;
+}
+}

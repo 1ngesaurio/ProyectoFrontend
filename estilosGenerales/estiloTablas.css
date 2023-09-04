@@ -110,4 +110,9 @@ background-color: #0a1dcf;
     background-color: greenyellow;
 }
 
+}/*Para convertir la aplicación en responsive*/
+@media screen and(max-width:500px){
+    form{
+        width: 80%;
+}
 }

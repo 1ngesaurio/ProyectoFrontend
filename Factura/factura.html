@@ -4,147 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zona Gadget</title>
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="sweetalert2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="shortcut icon" href="/assets/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="estilosFactura.css">
-    <link rel="stylesheet" href="../estilosGenerales/estiloMenu.css">
+    <link rel="stylesheet" href="../Menu/estilomenu.css">
 </head>
 <body>
-    <div class="botonDespliegue">
-        <img src="../assets/menu2.svg" alt="" class=""  onclick="toggleMenu2()">
-    </div>
-    <div class="padre">
-        <nav class="nav">
-        
-            <ul class="list">
-    
-                <div class="porfile">
-                    <img src="../assets/user.png" width="215px" alt="" class="phonoPorfile">
-                    <br>
-                    <span class="nameUser">Usuario</span>
-                    <br>
-                    <span class="emailUser">usurio@example.com</span>
-                </div>
-    <hr >
-                <li class="list__item">
-    
-    
-                    <div class="list__button">
-                        <img src="../assets/home.svg" alt="" class="list__img">
-                        <a href="#" class="nav__link">Inicio</a>
-                    </div>
-    
-                </li>
-    
-                <li class="list__item list__item--click">
-                    <div class="list__nutton list__nutton--click">
-                        <img src="../assets/statics.svg" alt="" class="list__img">
-    
-                        <a href="#" class="nav__link">Facturacion</a>
-                        <img src="../assets/arrow.svg" class="list__arrow">
-                    </div>
-    
-                    <ul class="list__show">
-                        <li class="list__inside">
-                            <a href="../Factura/factura.html" class="nav__link nav__link--inside">Facturacion</a>
-                        </li>
-                        <li class="list__inside">
-                            <a href="#" class="nav__link nav__link--inside">Reportes</a>
-                        </li>
-    
-                    </ul>
-    
-                </li>
-    
-    
-                <li class="list__item list__item--click">
-                    <div class="list__nutton list__nutton--click">
-                        <img src="../assets/calculator.svg" alt="" class="list__img">
-    
-                        <a href="#" class="nav__link">Inventario</a>
-                        <img src="../assets/arrow.svg" class="list__arrow">
-                    </div>
-    
-                    <ul class="list__show">
-                        <li class="list__inside">
-                            <a href="#" class="nav__link nav__link--inside">Catalogoi</a>
-                        </li>
-                        <li class="list__inside">
-                            <a href="#" class="nav__link nav__link--inside">Categorias</a>
-                        </li>
-      
-                    </ul>
-    
-                </li>
-    
-    
-                <li class="list__item list__item--click">
-                    <div class="list__nutton list__nutton--click">
-                        <img src="../assets/buy.svg" alt="" class="list__img">
-    
-                        <a href="#" class="nav__link">Compras</a>
-                        <img src="../assets/arrow.svg" class="list__arrow">
-                    </div>
-    
-                    <ul class="list__show">
-                        <li class="list__inside">
-                            <a href="#" class="nav__link nav__link--inside">Cotizacion</a>
-                        </li>
-                        <li class="list__inside">
-                            <a href="#" class="nav__link nav__link--inside">Proveedores</a>
-                        </li>
-         
-                    </ul>
-    
-                </li>
-    
-    
-    
-    
-                <li class="list__item list__item--click">
-                    <div class="list__nutton list__nutton--click">
-                        <img src="../assets/account.svg" alt="" class="list__img">
-    
-                        <a href="#" class="nav__link">Gestion de usuarios</a>
-                        <img src="../assets/arrow.svg" class="list__arrow">
-                    </div>
-    
-                    <ul class="list__show">
-                        <li class="list__inside">
-                            <a href="#" class="nav__link nav__link--inside">Roles</a>
-                        </li>
-        
-                    </ul>
-    
-                </li>
-    
-    
-    
-                <li class="list__item list__item--click">
-                    <div class="list__nutton list__nutton--click">
-                        <img src="../assets/settings.svg" alt="" class="list__img">
-    
-                        <a href="#" class="nav__link">Servicios</a>
-                        <img src="../assets/arrow.svg" class="list__arrow">
-                    </div>
-    
-                    <ul class="list__show">
-                        <li class="list__inside">
-                            <a href="#" class="nav__link nav__link--inside">Configuracion</a>
-                        </li>
-       
-                        </li>
-                    </ul>
-    
-                </li>
-    
-    
-            </ul>
-        </nav>
+    <nav class="navbar">
+        <div class="menu-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="menu">
+            <div>
+                <img src="../assets/home.svg" alt="" class="list__img">
+            </div>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Acerca de</a></li>
+            <li class="dropdown">
+                <a href="#">Opciones<span class="arrow">&#9662;</span></a>
+                <ul class="dropdown-menu">
+                    <li class="submenu">
+                        <a href="#">Servicio 1 <span class="arrow">&#9656;</span></a>
+                        <ul class="submenu-menu">
+                            <li><a href="#">Opción 1</a></li>
+                            <li><a href="#">Opción 2</a></li>
+                            <li><a href="#">Opción 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="submenu">
+                        <a href="#">Servicio 2 <span class="arrow">&#9656;</span></a>
+                        <ul class="submenu-menu">
+                            <li><a href="#">Opción 1</a></li>
+                            <li><a href="#">Opción 2</a></li>
+                            <li><a href="#">Opción 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="submenu">
+                        <a href="#">Servicio 3 <span class="arrow">&#9656;</span></a>
+                        <ul class="submenu-menu">
+                            <li><a href="#">Opción 1</a></li>
+                            <li><a href="#">Opción 2</a></li>
+                            <li><a href="#">Opción 3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+        <div class="right-buttons">
+            <button class="cta-button">Cerrar Sesión</button>
+        </div>
+    </nav>
 
     <div class="contenedorOpciones">
         <h1 class="titulo">Facturacion</h1>
-        <form action="#" class="form-container">
+        <form action="#" class="form-container" method="post" id="faturaForm">
 
             <div class="datos-facturacion-container">
               <h2>Datos de facturacion</h2>
@@ -154,8 +74,8 @@
                   <th>Fecha y Hora</th>
       
                   <tr>
-                      <td><input type="text" value="02" class="field"></td>
-                      <td><input type="text" value="18:01-20/02/2023" class="field"></td>
+                      <td><input type="text" value="02" class="field" id="NoVenta"></td>
+                      <td><input type="text" value="18:01-20/02/2023" class="field" id="FechaHora"></td>
       
                   </tr>
               </table>
@@ -178,19 +98,19 @@
 
                     <div>
                       <label for="compania">Nombre</label>
-                      <input type="text" id="compania"class="field">
+                      <input type="text" id="nombre"class="field">
                     </div>
                     <div>
                       <label for="direccion">Trabajador ID</label>
-                      <input type="text" id="direccion"class="field">
+                      <input type="text" id="trabajadorId"class="field">
                     </div>
                     <div>
                       <label for="telefono">Cliente ID</label>
-                      <input type="cellphone" id="direccion"class="field">
+                      <input type="cellphone" id="clienteId"class="field">
                     </div>
                     <div>
                       <label for="correo">NIT</label>
-                      <input type="email" id="direccion"class="field">
+                      <input type="email" id="nit"class="field">
                     </div>
             </div>
       
@@ -239,7 +159,7 @@
             </div>
       
             <div class="botones">
-                <input type="button" value="Agregar" class="btnOpcion" href="" >
+                <input type="button" value="Agregar" class="btnOpcion" href="" onclick="ValidarFactura(true)">
                 <input type="button" value="Cancelar" class="btnOpcion">
             </div>
       
@@ -251,9 +171,7 @@
     </div>
 
 </div>
-
-<script src="../Menu/menuScript.js"></script>
-
-
+<script src="../MenuPrueba/MenuApp.js"></script>
+<script src="/Factura/FacturaApp.js"></script>
 </body>
 </html>

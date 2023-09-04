@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap');
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdfcfc;
+}
+
+.navbar {
+    background-color: #122A40;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+    position: relative;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color:#01c38e;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color:#122A40;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+    top: 100%;
+    left: 0;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.submenu-menu {
+    display: none;
+    position: absolute;
+    background-color:#122A40;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+    top: 0;
+    left: 100%;
+}
+
+.submenu:hover .submenu-menu {
+    display: block;
+}
+
+.submenu-menu li {
+    padding: 10px;
+    border-bottom: 1px solid #444;
+}
+.right-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.right-buttons .cta-button {
+    background-color:#01c38e;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 15px;
+    transition: background-color 0.3s;
+}
+
+.right-buttons .cta-button:hover {
+    background-color:#0F5952;
+}
+
+/*Para convertir la aplicación en responsive*/
+@media screen and(max-width:500px){
+    form{
+        width: 80%;
+}
+}
+
+

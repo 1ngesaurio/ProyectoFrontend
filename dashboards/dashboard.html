@@ -6,140 +6,56 @@
     <title>Zona Gadget</title>
     
     <link rel="shortcut icon" href="/assets/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="/estilosGenerales/estiloMenu.css">
+    <link rel="stylesheet" href="/Menu/estilomenu.css">
     <link rel="stylesheet" href="estilosDashboard.css">
 </head>
 <body>
-    <div class="botonDespliegue">
-        <img src="../assets/menu2.svg" alt="" class=""  onclick="toggleMenu2()">
-    </div>
-    <div class="padre">
-    <nav class="nav">
-        
-        <ul class="list">
-
-            <div class="porfile">
-                <img src="../assets/user.png" width="215px" alt="" class="phonoPorfile">
-                <br>
-                <span class="nameUser">Usuario</span>
-                <br>
-                <span class="emailUser">usurio@example.com</span>
+    <nav class="navbar">
+        <div class="menu-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="menu">
+            <div>
+                <img src="../assets/home.svg" alt="" class="list__img">
             </div>
-<hr >
-            <li class="list__item">
-
-
-                <div class="list__button">
-                    <img src="../assets/home.svg" alt="" class="list__img">
-                    <a href="#" class="nav__link">Inicio</a>
-                </div>
-
-            </li>
-
-            <li class="list__item list__item--click">
-                <div class="list__nutton list__nutton--click">
-                    <img src="../assets/statics.svg" alt="" class="list__img">
-
-                    <a href="#" class="nav__link">Facturacion</a>
-                    <img src="../assets/arrow.svg" class="list__arrow">
-                </div>
-
-                <ul class="list__show">
-                    <li class="list__inside">
-                        <a href="../Factura/factura.html" class="nav__link nav__link--inside">Facturacion</a>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Acerca de</a></li>
+            <li class="dropdown">
+                <a href="#">Servicios <span class="arrow">&#9662;</span></a>
+                <ul class="dropdown-menu">
+                    <li class="submenu">
+                        <a href="#">Servicio 1 <span class="arrow">&#9656;</span></a>
+                        <ul class="submenu-menu">
+                            <li><a href="#">Opción 1</a></li>
+                            <li><a href="#">Opción 2</a></li>
+                            <li><a href="#">Opción 3</a></li>
+                        </ul>
                     </li>
-                    <li class="list__inside">
-                        <a href="#" class="nav__link nav__link--inside">Reportes</a>
+                    <li class="submenu">
+                        <a href="#">Servicio 2 <span class="arrow">&#9656;</span></a>
+                        <ul class="submenu-menu">
+                            <li><a href="#">Opción 1</a></li>
+                            <li><a href="#">Opción 2</a></li>
+                            <li><a href="#">Opción 3</a></li>
+                        </ul>
                     </li>
-
-                </ul>
-
-            </li>
-
-
-            <li class="list__item list__item--click">
-                <div class="list__nutton list__nutton--click">
-                    <img src="../assets/calculator.svg" alt="" class="list__img">
-
-                    <a href="#" class="nav__link">Inventario</a>
-                    <img src="../assets/arrow.svg" class="list__arrow">
-                </div>
-
-                <ul class="list__show">
-                    <li class="list__inside">
-                        <a href="#" class="nav__link nav__link--inside">Catalogoi</a>
-                    </li>
-                    <li class="list__inside">
-                        <a href="#" class="nav__link nav__link--inside">Categorias</a>
-                    </li>
-  
-                </ul>
-
-            </li>
-
-
-            <li class="list__item list__item--click">
-                <div class="list__nutton list__nutton--click">
-                    <img src="../assets/buy.svg" alt="" class="list__img">
-
-                    <a href="#" class="nav__link">Compras</a>
-                    <img src="../assets/arrow.svg" class="list__arrow">
-                </div>
-
-                <ul class="list__show">
-                    <li class="list__inside">
-                        <a href="#" class="nav__link nav__link--inside">Cotizacion</a>
-                    </li>
-                    <li class="list__inside">
-                        <a href="#" class="nav__link nav__link--inside">Proveedores</a>
-                    </li>
-     
-                </ul>
-
-            </li>
-
-
-
-
-            <li class="list__item list__item--click">
-                <div class="list__nutton list__nutton--click">
-                    <img src="../assets/account.svg" alt="" class="list__img">
-
-                    <a href="#" class="nav__link">Gestion de usuarios</a>
-                    <img src="../assets/arrow.svg" class="list__arrow">
-                </div>
-
-                <ul class="list__show">
-                    <li class="list__inside">
-                        <a href="#" class="nav__link nav__link--inside">Roles</a>
-                    </li>
-    
-                </ul>
-
-            </li>
-
-
-
-            <li class="list__item list__item--click">
-                <div class="list__nutton list__nutton--click">
-                    <img src="../assets/settings.svg" alt="" class="list__img">
-
-                    <a href="#" class="nav__link">Servicios</a>
-                    <img src="../assets/arrow.svg" class="list__arrow">
-                </div>
-
-                <ul class="list__show">
-                    <li class="list__inside">
-                        <a href="#" class="nav__link nav__link--inside">Configuracion</a>
-                    </li>
-   
+                    <li class="submenu">
+                        <a href="#">Servicio 3 <span class="arrow">&#9656;</span></a>
+                        <ul class="submenu-menu">
+                            <li><a href="#">Opción 1</a></li>
+                            <li><a href="#">Opción 2</a></li>
+                            <li><a href="#">Opción 3</a></li>
+                        </ul>
                     </li>
                 </ul>
-
             </li>
-
-
+            <li><a href="#">Contacto</a></li>
         </ul>
+        <div class="right-buttons">
+            <button class="cta-button">Cerrar Sesión</button>
+        </div>
     </nav>
 
     <div class="contenedorOpciones">
@@ -237,7 +153,7 @@
 
 </div>
 
-<script src="../Menu/menuScript.js"></script>
+<script src="/Menu/MenuApp.js"></script>
 
 
 </body>
